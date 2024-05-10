@@ -11,7 +11,7 @@ const AddUser = () => {
     const saveUser = async(e)=>{
         e.preventDefault();
         try{
-            await axios.post('https://alex-backend-g64dafi2la-et.a.run.app/users',{
+            await axios.post('https://alex-backend-g64dafi2la-et.a.run.app/Users',{
                 name,
                 email,
                 gender
