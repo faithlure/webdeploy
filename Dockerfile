@@ -1,7 +1,7 @@
 FROM node:18-alpine
-WORKDIR /app
-ENV PORT 5000
-COPY . .
+WORKDIR /frontend/
+COPY public/ /frontend/public
+COPY src/ /frontend/src
+COPY package.json /frontend/
 RUN npm install
-EXPOSE 5000
-CMD [ "npm", "run", "start"]
+CMD ["npm", "start"]
