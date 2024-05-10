@@ -10,13 +10,13 @@ useEffect(()=>{
 },[]);
 
 const getUsers = async()=>{
-    const response = await axios.get('http://localhost:5000/Users');
+    const response = await axios.get('https://alex-backend-g64dafi2la-et.a.run.app/Users');
     setUser(response.data);
 };
 
 const deleteUser = async(id)=>{
     try{
-        await axios.delete(`http://localhost:5000/Users/${id}`);
+        await axios.delete(`https://alex-backend-g64dafi2la-et.a.run.app/Users/${id}`);
         getUsers();
     } catch(error){
         console.log(error);
