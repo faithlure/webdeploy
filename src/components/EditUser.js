@@ -16,7 +16,7 @@ const EditUser = () => {
     const updateUser = async(e)=>{
         e.preventDefault();
         try{
-            await axios.patch(`https://alex-backend-g64dafi2la-et.a.run.app/Users/${id}`,{
+            await axios.patch(`https://alex-backend-g64dafi2la-et.a.run.app/users/${id}`,{
                 name,
                 email,
                 gender
