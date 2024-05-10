@@ -11,6 +11,8 @@ steps:
         'alex-backend',
         '--image',
         'gcr.io/$PROJECT_ID/alex-backend',
+        '--region',
+        'asia-southeast2',
         '--platform',
         'managed',
         '--allow-unauthenticated',
